@@ -1,0 +1,21 @@
+.media-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    margin: 0 20px;
+    padding: 0px;
+}
+.page-container h1{
+    margin: 20px 25px;
+    color: white;
+    text-align: center;
+}
+
+.media-container .item {
+    min-width: 190px;
+    width: 190px;
+    height: 300px;
+    margin: 20px;
+}

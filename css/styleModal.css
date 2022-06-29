@@ -1,0 +1,104 @@
+.modal {
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.70);
+    z-index: 1006;
+}
+.modal-milista .modal-container .close {
+    position: absolute;
+    width: 1000px;
+    padding: 10px;
+    text-align: end;
+}
+
+.modal-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: rgb(54, 54, 54);
+    width: 700px;
+    color: white;
+}
+.modal-container-info {
+    margin: auto;
+    padding: 25px;
+    width: 60%;
+}
+.modal-container-info h1 {
+    margin-bottom: 5px;
+}
+.modal-container .close {
+    position: absolute;
+    width: 700px;
+    padding: 10px;
+    text-align: end;
+}
+.modal-container .close i:hover {
+    cursor: pointer;
+}
+.modal-container-img {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    padding: 25px;
+}
+
+.modal-container-img img {
+    width: 100%;
+}
+.modal-buttons {
+    margin-top: 20px;
+    width: 100%;
+}
+.modal-buttons .button-view {
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    background: #b80f7d;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.modal-buttons select {
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    font-size: 17px;
+}
+.modal-buttons select option {
+    color: black;
+}
+.modal-info {
+    margin-bottom: 10px;
+}
+.modal-info-description {
+    margin-top: 10px;
+    overflow: hidden;
+    max-height: 170px;
+}
+.modal-info-clasification {
+    border: 1px solid white;
+}
+
+.modal-milista {
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.70);
+    z-index: 1006;
+}
+.modal-milista .modal-container {
+    width: 1000px;
+    height: 600px;
+    overflow-y: scroll;
+}

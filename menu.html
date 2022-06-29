@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemax</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styleModal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/logo1.png" type="image/x-icon">
+</head>
+    <body>
+        <header>
+            <div class="baricon-container">
+                <i class="fa-solid fa-bars" id="open"></i>
+            </div>
+            <div class="logo-container">
+                <a href="./menu.html"><img src="./assets/GOOD.png" alt=""></a>
+            </div>
+            <div class="searchicon-container" id="searchicon-container">
+                <i class="fa-solid fa-magnifying-glass" id="search"></i>
+            </div>
+            <div class="usericon-container" id="usericon-container">
+                <i class="fa-solid fa-user"></i>
+                <p class="user-name">Perfil</p>
+            </div>
+            <div class="searchbar-container" id="searchbar-container">
+                <input type="text" id="search-input">
+            </div>
+        </header>
+        <div class="overlay" id="overlay"></div>
+        <div class="search-container" id="search-container">
+            <div class="search-auxiliar" id="search-auxiliar">  
+                <i class="fa-solid fa-xmark" id="close-auxiliar"></i>
+                <input type="text" id="search-input">
+            </div>
+            <div class="media-container" id="todos">
+            </div>
+        </div>
+        <div class="user" id="user">
+            <a href="./planes.html" class="user-item">Elegir plan</a>
+            <a href="./perfiless.html" class="user-item">Cambiar de perfil</a>
+            <a href="./index.html" class="user-item">Cerrar sesión</a>
+        </div>
+        <div class="sidenav" id="sidenav">
+            <div class="closeicon-container">
+                <i class="fa-solid fa-xmark" id="close"></i>
+            </div>
+            <nav class="menu">
+                <a href="cartSeries.html" class="menu-item">Series</a>
+                <a href="cartPeliculas.html" class="menu-item">Peliculas</a>
+                <a href="#" class="menu-item" id="milista-open">Mi lista</a>
+                <a href="menu.html" class="menu-title">Categoria</a>
+                <a href="catalogoAcción.html" class="menu-item">Acción</a>
+                <a href="catalogoComedia.html" class="menu-item">Comedia</a>
+                <a href="catalogoSciFi.html" class="menu-item">Ciencia ficción</a>
+                <a href="catalogoDrama.html" class="menu-item">Drama</a>
+                <a href="catalogoTerror.html" class="menu-item">Terror</a>
+            </nav>
+        </div>
+        <main>
+            <img class="slider-container"></img>
+            <div class="page-container">
+                <div class="catalogo-container">
+                    <div class='arrow arrow-left' onclick="moverizquierda(this)"><i class='fa-solid fa-chevron-left'></i></div>
+                    <div class='arrow arrow-right' onclick="moverderecha(this)"><i class="fa-solid fa-chevron-right"></i></div>
+                    <h1>Seguir viendo</h1>
+                    <div class="media-container" id="seguir-viendo">
+                    </div>
+                </div>
+                <div class="catalogo-container">
+                    <div class='arrow arrow-left' onclick="moverizquierda(this)"><i class='fa-solid fa-chevron-left'></i></div>
+                    <div class='arrow arrow-right' onclick="moverderecha(this)"><i class="fa-solid fa-chevron-right"></i></div>
+                    <h1>Acción</h1>
+                    <div class="media-container" id="accion">
+                    </div>
+                </div>
+                <div class="catalogo-container">
+                    <div class='arrow arrow-left' onclick="moverizquierda(this)"><i class='fa-solid fa-chevron-left'></i></div>
+                    <div class='arrow arrow-right' onclick="moverderecha(this)"><i class="fa-solid fa-chevron-right"></i></div>
+                    <h1>Comedia</h1>
+                    <div class="media-container" id="comedia">
+                    </div>
+                </div>
+                <div class="catalogo-container">
+                    <div class='arrow arrow-left' onclick="moverizquierda(this)"><i class='fa-solid fa-chevron-left'></i></div>
+                    <div class='arrow arrow-right' onclick="moverderecha(this)"><i class="fa-solid fa-chevron-right"></i></div>
+                    <h1>Terror</h1>
+                    <div class="media-container" id="terror">
+                    </div>
+                </div>
+                <div class="catalogo-container">
+                    <div class='arrow arrow-left' onclick="moverizquierda(this)"><i class='fa-solid fa-chevron-left'></i></div>
+                    <div class='arrow arrow-right' onclick="moverderecha(this)"><i class="fa-solid fa-chevron-right"></i></div>
+                    <h1>Drama</h1>
+                    <div class="media-container" id="drama">
+                    </div>
+                </div>
+                <div class="catalogo-container">
+                    <div class='arrow arrow-left' onclick="moverizquierda(this)"><i class='fa-solid fa-chevron-left'></i></div>
+                    <div class='arrow arrow-right' onclick="moverderecha(this)"><i class="fa-solid fa-chevron-right"></i></div>
+                    <h1>Ciencia ficción</h1>
+                    <div class="media-container" id="scifi">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="modal" id="modal">
+            <div class="modal-container">
+                <div class="close">
+                    <i class="fa-solid fa-xmark" id="close-button"></i>
+                </div>
+                <div class="modal-container-info">
+                    <div class="modal-info" id="modal-info">
+                    </div>
+                    <div class="modal-buttons" id="modal-buttons">
+                    </div>
+                </div>
+                <div class="modal-container-img" id="modal-container-img">
+                </div>
+            </div>
+        </div>
+        <div class="modal-milista" id="modal-milista">
+            <div class="modal-container">
+                <div class="close">
+                    <i class="fa-solid fa-xmark" id="close-button-milista"></i>
+                </div>
+                <div class="media-container" id="milista">
+                    
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/carrusel.js"></script>
+        <script src="./js/datos.js"></script>
+        <script src="./js/index.js"></script>
+        <script src="./js/catalogo.js"></script>
+        <script src="./js/modal.js"></script>
+    </body>
+</html>
+

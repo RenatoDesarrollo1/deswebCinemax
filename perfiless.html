@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Perfiles | Cinemax</title>
+	<link rel="stylesheet" href="./css/stylePerfil.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="icon" href="./assets/logo1.png" type="image/x-icon">
+</head>
+<body>
+	<div class="modal" id="modal">
+		<div class="modal-container">
+			<div class="close" id="close">
+				<i class="fa-solid fa-xmark" id="close-button"></i>
+			</div>
+			<h1 id="modal-title" class="modal-title">Añadir Perfil</h1>
+			<div class="modal-image">
+				<img src="" alt="" id="modal-image">
+			</div>
+			<form class="form-perfil" onsubmit="agregar(this)">
+				<input type="text" name="perfilname">
+				<input type="submit" value="Guardar">
+			</form>
+		</div>
+	</div>
+
+	<header>
+		<figure>
+			<a href="#">
+				<img class="header-image" src="assets/GOOD.png">
+			</a>
+		</figure>
+	</header>
+	<main>
+		<span>
+			<h1 class="main-title">Elegir Perfil</h1>
+		</span>
+		<section class="block-image" id="block-image">
+			
+		</section>
+		<script src="./js/perfiles.js"></script>
+	</main>
+	
+</body>
+</html>

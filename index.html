@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion | Cinemax</title>
+    <link rel="stylesheet" href="./css/styleLog.css">
+	  <link rel="icon" href="./assets/logo1.png" type="image/x-icon">
+  </head>
+  <body>
+
+    <div class="login-container">
+      <img src="imglog/logo.jpg" class="avatar" alt="Avatar Image">
+      <h1>Inicio de Sesión</h1>
+      <form onsubmit="ingresar(this)">
+        <div class="login-correo">
+          <label for="txtcorreo">Correo electrónico</label>
+          <input id="txtcorreo" name="txtcorreo" type="text" placeholder="Introducir correo electronico">
+          <span class="error" id="error-correo">Correo electrónico incorrecto</span>
+        </div>
+        <div class="login-contra">
+          <label for="txtcontra">Contraseña</label>
+          <input id="txtcontra" name="txtcontra"  type="password" placeholder="Introducir Contraseña">
+          <span class="error" id="error-contra">Contraseña incorrecta</span>
+        </div>
+        <input class="perfil" type="submit" value="Inicia Sesion" >
+      </form>
+    </div>
+  </body>
+</html>
+<script src="./js/log.js" ></script>

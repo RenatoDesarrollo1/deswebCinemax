@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../imglog/GO.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+  }
+.choose-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choose-container h2{
+    color: white;
+}
+.choose-container p{
+    color: white;
+}
+.choose-container button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+.choose-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+    margin: 50px 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgb(54, 54, 54);
+}
+.pack{
+    color: white;
+    text-align: center;
+}
